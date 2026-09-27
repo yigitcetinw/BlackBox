@@ -3,7 +3,7 @@ name: Build BlackBox (Android)
 on:
   push:
     branches: [ "main", "master" ]
-  workflow_dispatch: # GitHub Actions sekmesinden manuel tetiklemeyi açar
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -13,10 +13,10 @@ jobs:
     - name: Repoyu Klonla
       uses: actions/checkout@v4
 
-    - name: Java JDK 17 Kurulumu
+    - name: Java JDK 11 Kurulumu
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '11' # Hatayı çözmek için 17 yerine 11 kullanıyoruz
         distribution: 'temurin'
         cache: gradle
 
