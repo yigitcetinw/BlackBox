@@ -24,7 +24,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import external.org.apache.commons.lang3.ArrayUtils;
-import external.org.apache.commons.lang3.tuple.Pair;
+import external.org.apache.commons.lang3.builder.IDKey;
+import android.util.Pair;
 
 /**
  * <p>Assists in implementing {@link Object#equals(Object)} methods.</p>
